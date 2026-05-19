@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Longevity",
+    "slug": "longevity",
+    "version": "1.0.0",
+    "scheme": "longevity",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.longevity.app",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "We read your steps, heart rate, sleep, and calorie data to display your wellness trends and share relevant insights with your physician during consultations.",
+        "NSHealthUpdateUsageDescription": "We do not write health data.",
+        "NSCameraUsageDescription": "Required for video consultations with your physician.",
+        "NSMicrophoneUsageDescription": "Required for audio during video consultations."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "com.longevity.app",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "health.READ_STEPS",
+        "health.READ_HEART_RATE",
+        "health.READ_SLEEP_SESSION",
+        "health.READ_ACTIVE_CALORIES_BURNED"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        { "backgroundColor": "#0A0A0A", "image": "./assets/splash.png" }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

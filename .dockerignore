@@ -1,0 +1,16 @@
+node_modules
+apps/mobile/node_modules
+apps/admin/node_modules
+packages/shared/node_modules
+.git
+.env
+*.env.local
+.expo
+dist
+.next
+.turbo
+*.log
+ios/
+android/
+google-services.json
+GoogleService-Info.plist
